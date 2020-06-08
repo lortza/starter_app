@@ -8,6 +8,14 @@ Description TBD
 
 Live on heroku as TBD
 
+## To Do
+- [ ] Rename all the things in all of the files
+- [ ] Set up routes
+- [ ] Set up database
+- [ ] Set up circleci
+- [ ] Set up dependabot
+- [ ] Set up codeclimate
+
 ## Features
 
 * wip
