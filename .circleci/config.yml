@@ -5,7 +5,19 @@ orbs:
 jobs:
   build:
     docker:
-      - image: circleci/ruby:2.6.3-stretch-node
+      - image: circleci/ruby:2.5.3-node-browsers
+        environment: # environment variables for primary container
+          BUNDLE_JOBS: 3
+          BUNDLE_RETRY: 3
+          BUNDLE_PATH: vendor/bundle
+          PGHOST: 127.0.0.1
+          PGUSER: circleci-demo-ruby
+          RAILS_ENV: test
+      - image: circleci/postgres:9.5-alpine # database image
+        environment: # environment variables for database
+          POSTGRES_USER: circleci-demo-ruby
+          POSTGRES_DB: circleci_test
+          POSTGRES_PASSWORD: ""
     executor: ruby/default
     steps:
       - checkout
@@ -13,7 +25,7 @@ jobs:
           name: Which bundler?
           command: bundle -v
       - ruby/bundle-install
-      
+
       # Database setup
       - run: bundle exec rake db:create
       - run: bundle exec rake db:migrate
