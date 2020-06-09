@@ -1,11 +1,15 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
-  devise_for :users
-  root to: 'cats#index'
-
-  resources :cats
-
-  namespace :admin do
-    resources :users, only: [:index, :show]
+  # temporary root route. replace with real, non-devise route.
+  devise_scope :user do
+    root to: "devise/passwords#edit"
   end
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  # Skip registrations for now so no new users can sign up.
+  devise_for :users, skip: [:registrations]
+
+  # Allow users to sign up and automatically populate categories and post types
+  # devise_for :users, controllers: { registrations: 'registrations' }
+
 end
