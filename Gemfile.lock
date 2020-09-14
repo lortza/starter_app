@@ -206,7 +206,7 @@ GEM
       mini_magick (>= 4.9.5, < 5)
       ruby-vips (>= 2.0.17, < 3)
     jar-dependencies (0.4.1)
-    jbuilder (2.10.0)
+    jbuilder (2.10.1)
       activesupport (>= 5.0.0)
     jwt (2.2.1)
     kwalify (0.7.2)
@@ -464,7 +464,7 @@ DEPENDENCIES
   factory_bot_rails
   faker!
   image_processing (~> 1.2)
-  jbuilder (~> 2.5)
+  jbuilder (~> 2.10)
   launchy
   listen (>= 3.0.5, < 3.3)
   loofah (>= 2.2.3)
