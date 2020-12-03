@@ -212,7 +212,7 @@ GEM
     kwalify (0.7.2)
     launchy (2.5.0)
       addressable (~> 2.7)
-    listen (3.2.1)
+    listen (3.3.3)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     loofah (2.8.0)
@@ -465,7 +465,7 @@ DEPENDENCIES
   image_processing (~> 1.2)
   jbuilder (~> 2.5)
   launchy
-  listen (>= 3.0.5, < 3.3)
+  listen (>= 3.0.5, < 3.4)
   loofah (>= 2.2.3)
   magic_frozen_string_literal
   mini_magick (~> 4.8)
