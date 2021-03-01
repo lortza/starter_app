@@ -55,9 +55,9 @@ GIT
 
 GIT
   remote: https://github.com/vmg/redcarpet.git
-  revision: 6270d6b4ab6b46ee6bb57a6c0e4b2377c01780ae
+  revision: d10f7e394f2d412603933e5d6e4843b92afea592
   specs:
-    redcarpet (3.5.0)
+    redcarpet (3.5.1)
 
 GEM
   remote: https://rubygems.org/
