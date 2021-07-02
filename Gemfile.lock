@@ -55,9 +55,9 @@ GIT
 
 GIT
   remote: https://github.com/vmg/redcarpet.git
-  revision: 6270d6b4ab6b46ee6bb57a6c0e4b2377c01780ae
+  revision: 03b664dad162eb09b81769c9bb881fd66a8ea960
   specs:
-    redcarpet (3.5.0)
+    redcarpet (3.5.1)
 
 GEM
   remote: https://rubygems.org/
@@ -224,7 +224,9 @@ GEM
     marcel (0.3.3)
       mimemagic (~> 0.3.2)
     method_source (1.0.0)
-    mimemagic (0.3.5)
+    mimemagic (0.3.10)
+      nokogiri (~> 1)
+      rake
     mini_magick (4.11.0)
     mini_mime (1.0.2)
     mini_portile2 (2.4.0)
